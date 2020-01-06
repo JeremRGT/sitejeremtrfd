@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sondage</title>
+    <title>Site.</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
 
   </head>

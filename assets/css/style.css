@@ -1,13 +1,14 @@
 @import url("reset.css");
 
-@import url("reset.css");
 
 
-p { /* Couleur de text de nav */
+footer p {
   color: red;
+  padding-left: 20px;
 }
+
 body {
-  background-color: #5f4;
+  background-color: white;
 }
 
 nav{
@@ -34,13 +35,13 @@ nav ul li a:visited {
   color: #999;
 }
 nav ul li a:visited:hover {
-  background: #fff;
+  background: red;
   color: #009;
 }
 nav ul li a:hover { /* Couleur d'arrière plan des boutons de "bande"*/
   background: #587;
   color: #fff;
-  opacity: 0.5;
+  opacity: 1;
 }
 nav ul li a:active {
   background: #000;
@@ -48,5 +49,48 @@ nav ul li a:active {
 }
 h1 {
   text-align: center;
-  
+
+}
+
+form {
+  background-color: darksalmon;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  padding: 20px;
+}
+
+form div {
+  padding: 10px 0;
+}
+
+form div label {
+  float: left;
+  width: 240px;
+  padding: 0 10px 0 0;
+  text-align: right;
+}
+
+form div input[type="submit"] {
+  background-color: red;
+  color: yellow;
+  font-size: 1.5em;
+  margin: 0 0 0 250px;
+}
+
+form fieldset {
+  outline: 2px solid red;
+}
+
+form textarea {
+  font-family: Verdana, Arial, sans-serif;
+}
+body .ment h1{
+  font-size: 1.2em;
+  color: red;
+}
+body .ment{
+  margin-left: 250px;
+  margin-right: 250px;
+  text-align: center;
 }

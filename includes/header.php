@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
+    <header>
+      <img src="">
+
     <meta charset="utf-8">
     <title></title>
+    </header>
   </head>
   <body>
 
@@ -16,7 +20,7 @@
           <li> <a href="index.php?page=mentions" title="Les mentions légales du site">Mentions légales</a> </li>
         </ul>
       </nav>
-    
+
 
   </body>
 </html>

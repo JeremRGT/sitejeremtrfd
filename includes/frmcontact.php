@@ -1,4 +1,3 @@
-<h1>Contact</h1>
 <form action="index.php?page=contact" method="post">
   <div>
 

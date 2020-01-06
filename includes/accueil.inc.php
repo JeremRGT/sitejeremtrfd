@@ -1,1 +1,3 @@
-<h1>accueil</h1>
+<h1>Bienvenue</h1>
+
+<p>blabla!</p>
