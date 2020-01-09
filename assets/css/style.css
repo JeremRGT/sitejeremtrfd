@@ -6,10 +6,22 @@
 #bann img{
   width: 100%;
 }
+footer {
+  background-color: #000;
+}
+
 
 footer p {
   color: red;
   padding-left: 20px;
+}
+footer h1{
+  color: red;
+  text-align: center;
+
+}
+.presentation h1{
+  font-size: 40px;
 }
 
 body {
@@ -18,6 +30,7 @@ body {
 body h1{
   font-size: 30px;
   padding-bottom: 2px;
+  text-align: center;
 }
 
 nav{
@@ -55,10 +68,6 @@ nav ul li a:hover { /* Couleur d'arrière plan des boutons de "bande"*/
 nav ul li a:active {
   background: #000;
   color: black;
-}
-h1 {
-  text-align: center;
-
 }
 
 form {
