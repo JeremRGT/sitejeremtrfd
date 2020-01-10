@@ -23,6 +23,11 @@ footer h1{
 .presentation h1{
   font-size: 40px;
 }
+.presentation h2{
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
 
 body {
   background-color: white;

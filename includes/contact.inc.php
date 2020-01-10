@@ -1,42 +1,63 @@
-<h1>Contact</h1>
-<form action="index.php?page=contact" method="post">
-  <div>
+<h1>Formulaire de contact</h1>
 
-  <label for="nom"> Nom :</label>
-  <input type="text" name="nom" id="nom"/>
-  </div>
+<?php
+echo $_POST['frmcontact'];
 
-  <div>
+if (isset($_POST['frmcontact'])) {
 
-  <label for="prénom"> Prénom :</label>
-  <input type="text" name="prénom" id="prénom"/>
-  </div>
+  $nom = checkInput($_POST['nom']);
+  $prenom = checkInput($_POST['prenom']);
+  $mail = checkInput($_POST['mail']);
+  $tel = checkInput($_POST['tel']);
+  $msg = checkInput($_POST['msg']);
+  $erreur = array();
+  if ($nom === "")
+    array_push($erreur, "Veuillez saisir votre nom");
+  if ($prenom === "")
+    array_push($erreur, "Veuillez saisir un prénom");
+  if ($mail === "")
+    array_push($erreur, "Veuillez saisir une adresse mail");
+  if ($tel === "")
+    array_push($erreur, "Veuillez saisir un numéro de téléphone");
+  if ($msg === "")
+    array_push($erreur, "Veuillez saisir un message");
+  if (count($erreur) > 0) {
+    $message = '<ul>';
+    for($i = 0 ; $i < count($erreur) ; $i++) {
+      $message .= '<li>';
+      $message .= $erreur[$i];
+      $message .= '</li>';
+    }
+    $message .= '</ul>';
+    echo $message;
+    require 'frmcontact.php';
+  }
+  else {
+    $sqlVerif = "SELECT COUNT(*) FROM clients
+    WHERE mail='" . $mail ."'";
+    $nbrOccurences = $pdo->query($sqlVerif)->fetchColumn();
+    if ($nbrOccurences > 0) {
+      echo "Déjà dans la base";
+      echo $sqlVerif;
+    }
+    else {
+        $sql = "INSERT INTO clients
+        (nom, prenom, mail, tel, msg)
+        VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail ."', '" . $tel ."', '" . $msg ."')";
+        $query = $pdo->prepare($sql);
+        $query->bindValue('nom', $nom, PDO::PARAM_STR);
+        $query->bindValue('prenom', $prenom, PDO::PARAM_STR);
+        $query->bindValue('mail', $mail, PDO::PARAM_STR);
+        $query->bindValue('tel', $tel, PDO::PARAM_STR);
+        $query->bindValue('msg', $msg, PDO::PARAM_STR);
+        $query->execute();
 
-  <div>
-
-  <label for="âge"> âge:</label>
-  <input type="text" name="âge" id="âge"/>
-  </div>
-
-  <div>
-
-  <label for="mail"> E-mail:</label>
-  <input type="mail" name="mail" id="mail"/>
-  </div>
-
-  <div>
-
-  <label for="mdp">Mot de passe :</label>
-  <input type="password" name="mdp" id="mdp"/>
-  </div>
-  <div>
-    <label for="msg">Message</label>
-    <textarea name="msg" id="msg"></textarea>
-
-  </div>
-
-
-  <input type="submit" value="Envoyer">
-  <input type="hidden" value="formcontact">
-
-</form>
+        echo $sql;
+        echo "Enregistrement OK";
+      }
+  }
+}
+else {
+  $nom = $prenom = $mail = $tel = $msg = "";
+  require 'frmcontact.php';
+}

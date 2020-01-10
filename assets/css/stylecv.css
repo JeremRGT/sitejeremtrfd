@@ -1,9 +1,10 @@
 @import url('reset.css');
 @import url('font.css');
-@import url('header.css');
-@import url('footer.css');
 
-div#bann img{
+.header h1{
+font-size: 40px;
+}
+#bann img{
   width: 100%;
 }
 body {
@@ -91,11 +92,11 @@ main aside {
 
     background-color: indianred;
 }
-footer .cv{
+#cv{
     clear: both;
     background-color: salmon;
 }
 
 footer {
-  background-color: #000;
+  background-color: #000000;
 }

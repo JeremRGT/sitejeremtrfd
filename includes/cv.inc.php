@@ -1,13 +1,4 @@
-<h1>CV</h1>
 
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Cv Jérémy RAGOT - RFD</title>
-    <link rel="stylesheet" href="./assets/css/stylecv.css">
-  </head>
-  <body>
     <div id="wrap">
       <header>
         <h1>Jérémy  <span>Ragot</span>
@@ -54,7 +45,7 @@
         </aside>
         </div>
       </main>
-      <footer class='cv'>
+      <footer id='cv'>
 <address>
   Jérémy Ragot - 19 rue Paul Cézanne - 76120 Le Grand-Quevilly<br />
   <a href=""<a href="mailto:jer.ra76@laposte.net">jer.ra76@laposte.net</a><br />
@@ -62,5 +53,3 @@
 </address>
       </footer>
     </div>
-  </body>
-</html>

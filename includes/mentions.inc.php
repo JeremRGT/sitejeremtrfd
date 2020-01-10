@@ -1,4 +1,4 @@
-<body>
+
   <div class="ment">
                     <br><h1>Mentions relatives à l'utilisation de cookies</h1><br>
 
@@ -31,4 +31,3 @@
 
 
   </div>
-</body>
