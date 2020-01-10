@@ -35,7 +35,7 @@
 
 
   <input type="submit" value="Envoyer">
-  <input type="hidden" value="frmcontact">
+  <input type="hidden" name="frmcontact">
 
 </form>
 

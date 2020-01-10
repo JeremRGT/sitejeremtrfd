@@ -83,7 +83,7 @@ main section dl dd ul li, main aside dl dd ul li{
 main section {
     width: 70%;
 
-    background-color: cadetblue;
+    background-color: #ccc;
 }
 
 main aside {

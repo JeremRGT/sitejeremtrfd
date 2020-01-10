@@ -1,7 +1,6 @@
 <h1>Formulaire de contact</h1>
 
 <?php
-
 if (isset($_POST['frmcontact'])) {
 
   $nom = checkInput($_POST['nom']);
