@@ -1,3 +1,5 @@
+<div class="frm">
+
 <form action="index.php?page=contact" method="POST">
   <div>
 
@@ -36,3 +38,5 @@
   <input type="hidden" value="frmcontact">
 
 </form>
+
+</div>

@@ -75,7 +75,7 @@ nav ul li a:active {
   color: black;
 }
 
-form {
+.frm form {
   background-color: darksalmon;
   margin-left: auto;
   margin-right: auto;
@@ -83,29 +83,29 @@ form {
   padding: 20px;
 }
 
-form div {
+.frm form div {
   padding: 10px 0;
 }
 
-form div label {
+.frm form div label {
   float: left;
   width: 240px;
   padding: 0 10px 0 0;
   text-align: right;
 }
 
-form div input[type="submit"] {
+.frm form div input[type="submit"] {
   background-color: red;
   color: yellow;
   font-size: 1.5em;
   margin: 0 0 0 250px;
 }
 
-form fieldset {
+.frm form fieldset {
   outline: 2px solid red;
 }
 
-form textarea {
+.frm form textarea {
   font-family: Verdana, Arial, sans-serif;
 }
 body .ment h1{

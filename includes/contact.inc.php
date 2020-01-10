@@ -1,7 +1,6 @@
 <h1>Formulaire de contact</h1>
 
 <?php
-echo $_POST['frmcontact'];
 
 if (isset($_POST['frmcontact'])) {
 
@@ -33,14 +32,8 @@ if (isset($_POST['frmcontact'])) {
     require 'frmcontact.php';
   }
   else {
-    $sqlVerif = "SELECT COUNT(*) FROM clients
-    WHERE mail='" . $mail ."'";
-    $nbrOccurences = $pdo->query($sqlVerif)->fetchColumn();
-    if ($nbrOccurences > 0) {
-      echo "Déjà dans la base";
-      echo $sqlVerif;
-    }
-    else {
+    $sqlVerif = "SELECT COUNT(*) FROM clients";
+
         $sql = "INSERT INTO clients
         (nom, prenom, mail, tel, msg)
         VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail ."', '" . $tel ."', '" . $msg ."')";
@@ -54,7 +47,7 @@ if (isset($_POST['frmcontact'])) {
 
         echo $sql;
         echo "Enregistrement OK";
-      }
+
   }
 }
 else {
