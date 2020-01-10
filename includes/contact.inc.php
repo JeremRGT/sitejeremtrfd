@@ -34,9 +34,7 @@ if (isset($_POST['frmcontact'])) {
   else {
     $sqlVerif = "SELECT COUNT(*) FROM clients";
 
-        $sql = "INSERT INTO clients
-        (nom, prenom, mail, tel, msg)
-        VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail ."', '" . $tel ."', '" . $msg ."')";
+        $sql = "INSERT INTO clients (nom, prenom, mail, tel, msg) VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail ."', '" . $tel ."', '" . $msg ."')";
         $query = $pdo->prepare($sql);
         $query->bindValue('nom', $nom, PDO::PARAM_STR);
         $query->bindValue('prenom', $prenom, PDO::PARAM_STR);

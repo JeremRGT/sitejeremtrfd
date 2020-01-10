@@ -1,5 +1,5 @@
 <?php
 
- function checkInput($chaine) {
-   return htmlspecialchars(addslashes(urldecode(trim($chaine))));
+ function checkInput($chain) {
+   return htmlspecialchars(addslashes(urldecode(trim($chain))));
  }

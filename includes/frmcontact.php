@@ -1,6 +1,6 @@
 <div class="frm">
 
-<form action="index.php?page=contact" method="POST">
+<form name="frmcontact" action="index.php?page=contact" method="POST">
   <div>
 
   <label for="nom"> Nom :</label>
@@ -10,7 +10,7 @@
   <div>
 
   <label for="prenom"> Prénom :</label>
-  <input type="text" name="prénom" id="prenom" value="<?=$prenom ?>" />
+  <input type="text" name="prenom" id="prenom" value="<?=$prenom ?>" />
   </div>
 
   <div>

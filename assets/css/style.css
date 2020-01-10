@@ -20,13 +20,17 @@ footer h1{
   text-align: center;
 
 }
-.presentation h1{
+#presentation h1{
   font-size: 40px;
 }
-.presentation h2{
+#presentation h2{
   font-size: 25px;
   margin-top: 10px;
   text-align: center;
+}
+#presentation p {
+  text-align: center;
+  font-size: 20px;
 }
 
 body {
