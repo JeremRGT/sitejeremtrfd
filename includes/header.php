@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/stylecv.css">
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jqueryui.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title></title>

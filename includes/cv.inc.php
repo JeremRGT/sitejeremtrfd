@@ -40,7 +40,10 @@
           <dl>
             <dt class="first">Formation</dt>
             <dd>Baccalauréat STI2D</dd>
-            <dd><abbr title="Certificat d'Aptitude Professionnelle">CAP</abbr> PRO E <br> <a href="index.php?page=cveng" title="CV anglais">CV anglais</a> </dd>
+            <dd><abbr title="Certificat d'Aptitude Professionnelle">CAP</abbr> PRO E </dd>
+              <dd> <a href="index.php?page=cveng" title="CV anglais">CV anglais</a> </dd>
+              <dd> <a href="assets/img/cvfr.png" download='CV Jérémy Ragot fr'>télécharge moi</a> </dd>
+
           </dl>
         </aside>
         </div>
@@ -50,7 +53,6 @@
   Jérémy Ragot - 19 rue Paul Cézanne - 76120 Le Grand-Quevilly<br />
   <a href=""<a href="mailto:jer.ra76@laposte.net">jer.ra76@laposte.net</a><br />
   <a href="tel:+33669712366">+33 6 69 71 23 66</a><br />
-  <a href="assets/img/cvfr.png" download='CV Jérémy Ragot fr'>télécharge moi</a>
 </address>
       </footer>
     </div>
